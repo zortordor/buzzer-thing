@@ -1,4 +1,3 @@
-#include "pitches.h"
 
 // Define the connections to the Arduino
 const int pinCLK = 2; // Connected to CLK on the rotary encoder
@@ -28,16 +27,6 @@ int lastEncoderPos = 0;
 // Variables to keep track of the state of the pins
 int lastCLK;
 int currentCLK;
-
-//Define notes
-int melody[] = {
-  NOTE_C4, NOTE_G3, NOTE_G3, NOTE_A3, NOTE_G3, 0, NOTE_B3, NOTE_C4
-};
-
-// note durations: 4 = quarter note, 8 = eighth note, etc.:
-int noteDurations[] = {
-  4, 8, 8, 4, 4, 4, 4, 4
-};
 
 // Function to display a number on a single digit
 void turnOnElem(const int segments[]) {
